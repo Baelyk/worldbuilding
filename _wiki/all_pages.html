@@ -1,0 +1,33 @@
+---
+  layout: wiki
+  title: Contents
+  extension: html
+---
+
+<p>All of the pages in the wiki</p>
+
+<div id="entries" class=""></div>
+
+<script type="text/javascript">
+// I am 100% positive this is the best way to do this
+
+let entriesDiv = document.querySelector('#entries')
+let letter = ''
+
+let entries = [
+  {% for entry in site.wiki %}
+    {
+      title: "{{ entry.title }}",
+      url: "{{ entry.url }}",
+    },
+  {% endfor %}
+].forEach(entry => {
+  if (letter !== entry.title[0].toUpperCase()) {
+    letter = entry.title[0].toUpperCase()
+    entriesDiv.innerHTML += `\n</ul>\n<h2 id="${letter}">${letter}</h2>\n<ul>\n`
+  }
+  entriesDiv.innerHTML += `\n<li><a href="${entry.url}">${entry.title}</a></li>`
+})
+entriesDiv.innerHTML += '\n</ul>'
+
+</script>

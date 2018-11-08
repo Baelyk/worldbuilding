@@ -1,0 +1,92 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  height: 100%;
+}
+
+header {
+  margin: 8px 0;
+}
+
+main {
+  margin: 8px 32px;
+  padding: 10pt;
+}
+
+.hide {
+  display: none;
+}
+
+.center {
+  text-align: center;
+}
+
+.small {
+  font-size: 8pt;
+}
+
+// --- Links ---
+
+a {
+  color: #0f80ff;
+  text-decoration: none;
+  // font-weight: bold;
+  margin: 0;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+// --- Navbar ---
+
+nav {
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 12pt;
+  // background-color: #f3f3f3;
+  padding: 5pt 0;
+  // border-radius: 5pt;
+  cursor: default;
+  margin: 10pt 10pt -10pt 10pt;
+}
+
+nav .link {
+  padding: 5pt 7pt;
+  font-weight: normal;
+  text-align: center;
+}
+
+nav .link:hover {
+  background-color: #f5f5f5;
+  border-radius: 4pt;
+  cursor: pointer;
+}
+
+nav a:hover {
+  text-decoration: none;
+}
+
+// --- Footer ---
+
+footer {
+  margin: 8px;
+  padding: 10pt;
+  border-top: 1pt solid #d9d9d9;
+  font-family: sans-serif;
+  font-size: 11pt;
+}
+
+footer .license {
+  float: right;
+}
+
+// --- Anchors ---
+
+.anchor {
+  font-family: Menlo, monospace;
+}
+
+.anchor:hover {
+  text-decoration: none;
+}

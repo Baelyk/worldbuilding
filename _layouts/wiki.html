@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  {% include header.html %}
+  <body>
+    <header>
+      <nav>
+        <span class="link"><a href="/wiki/">Main Page</a></span>
+        <span class="between">&#183;</span>
+        <span class="link"><a href="/wiki/all_pages">Contents</a></a></span>
+        <span class="between">&#183;</span>
+        <span class="link"><a href="https://github.com/Baelyk/worldbuilding/blob/master/wiki/{{ page.title }}.{{ page.extension }}">Source</a></span>
+      </nav>
+    </header>
+    <main>
+      <h1>{{ page.title }}</h1>
+
+      {{ content }}
+    </main>
+    {% include footer.html %}
+  </body>
+  {% include anchors.html %}
+</html>
