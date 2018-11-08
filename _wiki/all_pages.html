@@ -26,7 +26,7 @@ let entries = [
     letter = entry.title[0].toUpperCase()
     entriesDiv.innerHTML += `\n</ul>\n<h2 id="${letter}">${letter}</h2>\n<ul>\n`
   }
-  entriesDiv.innerHTML += `\n<li><a href="${entry.url}">${entry.title}</a></li>`
+  entriesDiv.innerHTML += `\n<li><a href="{{ site.baseurl }}${entry.url}">${entry.title}</a></li>`
 })
 entriesDiv.innerHTML += '\n</ul>'
 
