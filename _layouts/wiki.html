@@ -8,7 +8,7 @@
         <span class="between">&#183;</span>
         <span class="link"><a href="{{ site.baseurl }}/wiki/all_pages">Contents</a></a></span>
         <span class="between">&#183;</span>
-        <span id="source-link" class="link"><a href="https://github.com/Baelyk/worldbuilding/blob/master/_wiki/{{ page.title }}.{{ page.extension }}">Source</a></span>
+        <span id="source-link" class="link"><a href="https://github.com/Baelyk/worldbuilding/blob/master/{{ page.path }}">Source</a></span>
       </nav>
     </header>
     <main>
@@ -19,8 +19,4 @@
     {% include footer.html %}
   </body>
   {% include anchors.html %}
-  <script type="text/javascript">
-    let sourceLink = document.querySelector('#source-link > a')
-    sourceLink.href = sourceLink.href.replace('%20', '_')
-  </script>
 </html>
