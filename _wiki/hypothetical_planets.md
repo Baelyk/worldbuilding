@@ -12,6 +12,9 @@ by an outside entity and they collapse onto one of the options.
 Due to the nature of their survival, philosophy would be key to successful
 hypothetical planets/civilizations.
 
+It is unknown whether all planets are/were hypothetical planets in nature, with
+normal planets collapsing into existance.
+
 ## Inspiration
 
 Inspired by this [video](https://www.youtube.com/watch?v=enpWDHXrG4A&t=330s)
